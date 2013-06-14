@@ -1,5 +1,4 @@
-package kr.co.plask.common.constants;
-
+package java;
 import java.util.Scanner;
 
 public class Fibonacci {

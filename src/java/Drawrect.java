@@ -1,5 +1,4 @@
-package first;
-
+package java;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Scanner;

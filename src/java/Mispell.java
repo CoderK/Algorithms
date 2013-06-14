@@ -1,5 +1,4 @@
-package kr.co.plask.supsrv.workthread;
-
+package java;
 import java.util.Scanner;
 
 public class Mispell {

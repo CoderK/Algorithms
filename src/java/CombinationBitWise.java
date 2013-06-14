@@ -1,13 +1,9 @@
-package kr.co.plask.common.constants;
-
+package java;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class CombinationBitWise {
 	
-	/*
-	 * 1 <= n <= 32 범위를 가정하고 비트와이즈 연산을 이용해서 풀었심.
-	 **/
 	private Scanner	scanner	=	new Scanner( System.in );
 	
 	public int inputCaseCnt() {
@@ -31,13 +27,13 @@ public class CombinationBitWise {
 			temps	=	this.inputNumber();
 			
 			/*
-			 * n개의 원소에서 m개를 꺼냄.
+			 * n媛쒖쓽 �먯냼�먯꽌 m媛쒕� 爰쇰깂.
 			 **/
 			n		=	Integer.parseInt( temps[ 0 ] );
 			m		=	Integer.parseInt( temps[ 1 ] );
 			
 			if( n < m ) {
-				System.out.println( "장난하냐 제대로 입력해라잉." );
+				System.out.println( "�λ궃�섎깘 �쒕�濡��낅젰�대씪��" );
 				continue;
 			}
 					
@@ -65,7 +61,7 @@ public class CombinationBitWise {
 	}
 	
 	/*
-	 * int 배열 복사
+	 * int 諛곗뿴 蹂듭궗
 	 **/
 	private int[] arrayCopy( final int[] srcArray ) {
 		final int LEN	=	srcArray.length;
@@ -79,8 +75,7 @@ public class CombinationBitWise {
 	}
 	
 	/*
-	 * 재귀함수로 조합 구하기
-	 **/
+	 * �ш��⑥닔濡�議고빀 援ы븯湲�	 **/
 	private void combinate( int srcChecker, int[] combArray, int n, int m, int curIdx ) {
 		curIdx++;
 		
@@ -93,7 +88,7 @@ public class CombinationBitWise {
 		int[] newCombArray	=	null;
 		
 		for( int i = 0; i < n; i++ ) {
-			/* 새로운 배열을 만들어서 이용하지 않으면 값이 참조가 되는 문제 발생 */
+			/* �덈줈��諛곗뿴��留뚮뱾�댁꽌 �댁슜�섏� �딆쑝硫�媛믪씠 李몄“媛��섎뒗 臾몄젣 諛쒖깮 */
 			newChecker		=	srcChecker;
 			newCombArray	=	this.arrayCopy( combArray );
 			

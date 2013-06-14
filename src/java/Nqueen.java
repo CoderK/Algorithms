@@ -1,5 +1,4 @@
-package first;
-
+package java;
 import java.util.Scanner;
 
 public class Nqueen {
@@ -7,7 +6,7 @@ public class Nqueen {
 	private int	resultCnt;
 	
 	public void backtrack( int[] resultArray, int idx, int n ) {
-		int 	ncandidates	=	0;	// ´ÙÀ½À§Ä¡ ÈÄº¸
+		int 	ncandidates	=	0;	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ ï¿½Äºï¿½
 		int[] 	c	=	new int[ n ];
 		int		i	=	0;
 		
@@ -30,11 +29,11 @@ public class Nqueen {
 		boolean canMove	=	true;
 		ncandidates	=	0;
 		
-		for( i = 1; i <= cols; i++ ) {		// ¿­
+		for( i = 1; i <= cols; i++ ) {		// ï¿½ï¿½
 			canMove	=	true;
 			
-			/* ÀÌºÎºÐÀÌ Áß¿ä */
-			for( j = 1; j < rows; j++ ) {	// Çà
+			/* ï¿½ÌºÎºï¿½ï¿½ï¿½ ï¿½ß¿ï¿½ */
+			for( j = 1; j < rows; j++ ) {	// ï¿½ï¿½
 				if( Math.abs( (rows) - j ) == Math.abs( i - result[j] ) || i == result[ j ] ) {
 					canMove	=	false;
 					break;
