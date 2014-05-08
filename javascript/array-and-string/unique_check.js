@@ -1,6 +1,9 @@
 /**
+ * 문제 :
+ *
  * 문자열에 포함된 문자들이 전부 유일한지를 검사하는 알고리즘을 구현하라.
  * 다른 자료구조를 사용할 수 없는 상황이라면 어떻게 하겠는가?
+ *
  */
 
 
@@ -25,10 +28,8 @@ function isUniqueStringByArray(sTarget) {
 
 
 /*
- JavaScript는 Number type을 31비트 부동소수점 값으로 처리함.
- 전체 32비트 중 1비트는 Object인지 Number인지 체크.
- 따라서 시프트 연산을 30까지 할 수 있음.
- 30 넘어가면 값이 깨진다.
+ JavaScript는 Number type은 64bit Double형 부동소수점 값임.
+ 비트 연산을 처리할 때는 32bit Integer로 처리함.
 
  확인하려는 문자 요소의 범위가 a-z라면.. 비트 연산으로 처리 가능.
 */
