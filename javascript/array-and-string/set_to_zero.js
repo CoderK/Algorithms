@@ -29,7 +29,7 @@ function checkZeroElement(aRaw) {
  function setZeroToRowAndCol(aTarget, aRaw, i, j){
      for(var k = 0; k < aRaw.length; k++){
          for(var l = 0; l < aRaw[k].length; l++){
-             if(k == i || j == l){
+             if( (k == i || j == l) && aTarget[k][l] === 1){
                  aTarget[k][l] = 0;
              }
          }
@@ -42,4 +42,5 @@ function checkZeroElement(aRaw) {
      [1, 1, 1, 1],
      [1, 1, 0, 1]
  ]);
+
 
